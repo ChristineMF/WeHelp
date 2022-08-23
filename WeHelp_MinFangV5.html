@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <title>藍敏方的WeHelp申請書</title>
+        <style type="text/css">
+            /*body版型設定*/
+            body{
+                font-size:20px; font-family:Arial, 標楷體; line-height:30px;
+            }
+            ol{
+                padding-left:30px;
+            }
+            /*head, box, content, collapsible(button)的版型設定*/
+            .head{
+                width:450px;
+                height:30px;
+                color:white;
+                align-content:center;
+                margin-left:auto;
+                margin-right:auto;
+                font-weight:bold; 
+                font-size:40px;
+                text-align:center; 
+                padding:30px;
+                position:relative;
+                box-shadow: 3px 4px 0px 0px #8B008B;
+                background:linear-gradient(to bottom, #BA55D3 70%, #ededed 100%);
+                background-color:#BA55D3;
+                border-radius:15px;
+                border:1px solid #d6bcd6;
+                margin-top:10px; 
+            }
+            .box{
+                width:1000px; 
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:-50px;
+                padding:10px; 
+                background-color:#F5F5F5;
+                border:3px #B8860B solid;
+                border-radius:15px; 
+            }
+            .content{
+                width:900px; 
+                margin-left:auto; 
+                margin-right:auto;
+                padding-top:10px;
+                padding-left:45px;
+                padding-right:20px;
+                display:none;
+                overflow:hidden;
+                transition: max-height 0.2s ease-out;
+                color:black;
+                font-size:24px;
+            }
+            .collapsible{
+                color:#444;
+                cursor:pointer;
+                width:100%;
+                border:none;
+                outline:none;
+                text-align:left;
+                font-family:"標楷體";
+                font-weight:bold;
+                font-size:26px;
+                box-shadow: 3px 4px 0px 0px #899599;
+                background:linear-gradient(to bottom, #E0E0E0 50%, #bab1ba 100%);
+                background-color:#ededed;
+                border-radius:15px;
+                border:1px solid #d6bcd6;
+                display:inline-block;
+                padding:7px 25px;
+                margin-top:20px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #e1e2ed;
+            }
+            
+            /*每個題目後面的「＋」號*/
+            .collapsible:after{
+                content: '\02795';
+                font-size:24px;
+                font-weight:bold;
+                float:right;
+                margin-left:5px;
+            }
+            /*滑鼠滑到題目(button)時，的變色*/
+            .active, .collapsible:hover{
+                background-color:#B8860B;
+                color:white;
+                box-shadow: 3px 4px 0px 0px #B88608;
+                background:linear-gradient(to bottom, #B88608 80%, #ededed 100%);
+            }
+            /*click題目後，＋號變成「-」號，表示回覆展開*/
+            .active:after{
+                content: '\2212';
+            }
+            /*螢幕小於1024時，所使用的顯示設定*/
+            @media screen and (max-width:1024px){
+                .head{width:70%;text-align:center; font-size:24px;}
+                .collapsible{width:100%; font-size:20px;}
+                .content{width:80%; text-align:left; font-size:18px;}
+                .box{width:90%; text-align:center;}
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body style="margin:0px; background:#F5F5F5;">
+        <div class="head">藍敏方的WeHelp申請書</div>
+        <div class="box">
+            <br><br>   
+            <button type="button" class="collapsible">一、兩百字內的個人簡介</button>
+            <div class="content">
+                 2006年進台大醫院任護理師，曾用EXCEL VBA開發協助照護病人的表單，2011年至陽明大學生物醫學資訊所在職進修。2017年碩士畢業後，喜歡寫程式的感覺始終高於臨床工作，於2021年在另一半的支持下決定離職轉戰軟體工程師，曾參加2021年台大資訊系統C#訓練班及自學HTML、CSS、JavaScript及ASP .NET MVC，曾在朋友介紹下承包某公司網頁改版而自學PHP及MySQL，並順利結案得到開發費用。在YouTube上受到彭彭老師及第二屆學員介紹bootcamp的吸引下，希望加入WeHelp磨練成長至完成個人專案作品。
+            </div>
+            
+            <button type="button" class="collapsible">二、為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</button>
+            <div class="content">
+                <ol>
+                    <li>
+                        透過影片及看書自學Git、HTML、CSS與JavaScript，並運用其語法製作學習筆記網頁及上傳至GitHub。
+                    </li>
+                    <li>
+                        因承包某公司的內部網頁改版，而透過看書及網路資源自學PHP與MySQL，自己研究資料庫架構與內容後，除在原本網頁新增功能外，另設計出符合客戶需求的庫存報表網頁。
+                    </li>
+                    <li>
+                        參加台灣大學資訊系統訓練班的第342期C#程式設計基礎班線上課程，完成課堂作業順利結業。
+                    </li>
+                    <li>
+                        參與2022年AWS雲端高峰會時舉辦的培訓課程，在實作課程中，學習Amazon EC2及Amazon Virtual Private Cloud(VPC)的基本操作方法。
+                    </li>
+                    <li>
+                        目前透過教學影片自學ASP .NET MVC中。
+                    </li>
+                </ol>
+            </div>
+        
+            <button type="button" class="collapsible">三、如果參與這個計畫，會怎麼安排學習時間？</button>
+            <div class="content">
+                因待業中故全心投入參與WeHelp培訓，預計學習時間為每週一至六的8:30-17:30，22:00-24:00，週日視任務完成狀況而彈性調整，因有兩個國小的子女，故其餘為陪伴子女的家庭時間。
+            </div>
+            
+            <button type="button" class="collapsible">四、是否有想要加入的軟體公司？為什麼想加入該公司？</button>
+            <div class="content">
+                因為具備約14年的護理臨床經驗，對醫療資訊各系統有一定程度的瞭解，期待能開發出符合第一線人員需求，使照護病人或行政管理事半功倍的醫療資訊系統，故期待能加入醫療相關產業的軟體公司。
+            </div>
+        
+            <button type="button" class="collapsible">五、請描述一件你曾經碰到最困難的事情，如何克服？</button>
+            <div class="content">
+                因在C#程式設計訓練班學習過程式設計基本概念，便挑戰在沒學過PHP且MySQL只有設計學校作業小型資料庫經驗的情況下，承包某公司的內部網頁改版，邊做邊自學語法。接此案最大的困難在於此內部網頁共11個系統，已建置115個資料表，需經由深入了解公司從客戶訂貨開始的進出退貨流程，找出27個建置庫存管理報表會用到的資料表，釐清關聯式資料庫的架構與資料表間的關聯，且遇到客戶要求的報表欄位資料，卻因建置資料庫時未建立此欄位，而無法取得資料。<br>
+                經由繪製訂貨及進出退貨流程圖，運用EXCEL建立包含流程步驟、資料表及所需欄位的資料表，另繪製E-R Model圖共三種方法幫助找出資料庫關聯及庫存管理報表所需運用的欄位，並與客戶溝通無法取得的欄位資料之替代呈現方式，提醒出現警示符號，為客戶需深入釐清的資料，最終提前在約定期限前完成測試結案。
+            </div>
+            
+            <button type="button" class="collapsible">六、關於這份申請網頁，請分享一個你開發時的技術心得。</button>
+            <div class="content">
+                一開始尚未有明確版面設計靈感時，先單純用HTML做出基礎版的申請網頁，只有頁首、題目及內容，接著參考各網站設計後，加上CSS設定樣式，將題目做成圓角按鈕及加陰影增加立體感，並使用虛擬選擇器「:hover」，設定滑鼠移到題目時會變色，然後加上JavaScript做出每個題目的回覆內容，隨著題目是否被click而展開及隱藏的Collapse效果，最後加上RWD回應式網站設計，以便在各裝置皆能閱讀申請書，在逐步修改的情況下，共改了五個版本才完成定稿。過程中遇到瓶頸時，便運用網路資源找資料，我很喜歡這種從無到有的創造過程，隨著每次改版漸趨近於心中所想時，成就感亦隨之增加，雖然只是一頁，但能透過自學運用HTML、CSS及JavaScript，解決自己設下的挑戰，最終呈現自己喜歡的網頁，讓我更有信心能在參與WeHelp Bootcamp時，完成任務與專案作品。
+            </div>
+            
+            <button type="button" class="collapsible">七、其他想要對我們說的事情？</button>
+            <div class="content">
+                
+            </div>
+            <br><br>
+
+        </div>
+        <!--折疊回覆-->
+        <script type="text/javascript">
+            var coll=document.getElementsByClassName("collapsible");
+            var i;
+            
+            for(i=0; i<coll.length; i++)
+                {
+                    coll[i].addEventListener("click", function(){
+                        this.classList.toggle("active");
+                        var content=this.nextElementSibling;
+                        if(content.style.display==="block"){
+                            content.style.display="none";
+                        }
+                        else{
+                            content.style.display="block";
+                        }
+                    });
+                }
+        </script>
+        
+    </body>
+    
+</html>
