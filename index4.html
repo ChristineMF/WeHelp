@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+    <title>Task List for Christine Lan 2022</title>
+    <link rel="stylesheet" href="style_main4.css"/>
+    <!--從iconsout 連結載入Icon-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Min Fang 的待辦事項 2022</h1>
+            <!--新增待辦事項的表單-->
+            <form id="form_newTask">
+                <img src="bars-icon.svg" alt="icon">
+                <input type="text"
+                       id="input_new"
+                       placeholder="請輸入待辦事項"/>
+                <button type="submit"
+                        id="btn_addNew">+</button>
+            </form>
+        </header>
+        <main>
+            <section class="taskList">
+                
+                <div class="controls">
+                    <div class="filter">
+                        <span id="all" class="active"><!--全部--></span>
+                        <span id="pending" ><!--執行中--></span>
+                        <span id="completed" ><!--完成--></span>
+                    </div>
+                    <button class="btnClearAll">全部清除</button>
+                </div>
+                
+                <div id="taskAll"></div>
+            </section>
+        </main>
+
+        <script src="style_main_4.js"></script>
+        
+    </div>
+</body>
+</html>
