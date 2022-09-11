@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Arial", "微軟正黑體";
+}
+header{
+    padding:2px 1px;
+    max-width:800px;
+    width:100%;
+    margin: 0 auto;   
+}
+body{
+    display:flex;
+    flex-direction:column;
+    background:#D3D3D3;
+}
+.wrapper{
+    max-width:800px;
+    margin:20px auto;
+    background:white;
+    border-radius:10px;
+}
+#form_newTask{
+    display:flex;
+}
+h1{
+    font-size:30px;
+    text-align: center;
+    margin:20px 0px 10px 0px;
+}
+#input_new{
+    height:60px;
+    flex:110%;
+    padding:0 45px;
+    border-radius:10px;
+    margin:15px;
+    font-size:22px;
+    position:relative;
+    z-index:1;
+}
+#form_newTask img{
+    position:absolute;
+    margin-top:50px;
+    transform: translate(18px, -60%);
+    width:40px;
+    z-index:2;
+}
+#input_new::placeholder{
+    color:gray;
+}
+#btn_addNew{
+    display:flex;
+    font-size:50px;
+    flex:100%;
+    color:white;
+    width:60px;
+    height:60px;
+    font-weight:800;
+    border-radius:10px;
+    margin:15px 15px 15px 585px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, gray, black);
+    padding:3px 2px 5px 10px;
+    position:absolute;
+    transition: 0.4s;
+    z-index:2;
+}
+#btn_addNew:hover{
+    opacity: 0.8;
+}
+#btn_addNew:active{
+    opacity: 0.6;
+}
+main{
+    flex:110%;
+    max-width:750px;
+    padding:10px 15px;
+    width:100%;
+    margin:0 auto;
+}
+.taskList{
+    padding:10px;
+}
+.newTask {
+    flex:110%;
+    display:flex;
+    justify-content: space-between;
+    
+    padding:10px 0px;
+    margin-bottom:10px;
+}
+#taskAll .newTask .content{
+    display:flex;
+    width:100%;
+    margin:0px;
+}
+
+#taskAll .newTask .content .text{
+    display:block;
+    width:100%;
+    transition:0.4s;
+    color:black;
+    font-size:24px;
+    margin:0px;
+    padding:10px;
+}
+#taskAll .newTask .actions{
+    width:50px;
+    margin:0px;
+}
+.controls .btnClearAll{
+    display:flex;
+    outline:none;
+    border:none;
+    color:white;
+    background: blue;
+    background-image: linear-gradient(to right, blue, gray);
+    cursor:pointer;
+    font-size:18px;
+    border-radius:5px;
+    padding:15px;
+    margin-top:-30px;
+    margin-left:200px;
+}
+.btnClearAll:hover{
+    opacity: 0.8;
+}
+
+.btnClearAll:active{
+    opacity: 0.6;
+}
+#taskAll .actions button{
+    display:flex;
+    width:50px;
+    padding:5px;
+    cursor:pointer;
+    margin: 5px;
+    font-size:18px;
+    font-weight:700;
+    border-radius:10px;
+    margin:5px 0px 5px 5px ;
+    text-transform: uppercase;
+    transition: 0.4s;
+    background-image: linear-gradient(to right, gray, black);
+    color:white;
+}
+#taskAll .actions button:hover{
+    opacity: 0.8;
+}
+#taskAll .actions button:active{
+    opacity:0.6;
+}
+
+
+
+.controls{
+    display:flex;
+    justify-content: space-between;
+    padding: 18px 0px 18px 25px;
+    border-bottom: 2px solid #D3D3D3;
+}
+.filter{
+    margin-left:-25px ;
+}
+.filter span{
+    cursor:pointer;
+    margin:-3px;
+    font-size:18px;
+    border:2px solid #D3D3D3;
+    border-bottom:2px;
+    padding:30px 30px 20px 30px;
+}
+.filter span.active{
+    color:cornflowerblue;
+}
+
+
+
+
+
+
