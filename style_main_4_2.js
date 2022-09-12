@@ -87,7 +87,7 @@ window.addEventListener('load',()=>{
         var myComplete=[];
         taskComplete.addEventListener('click',()=>{
             taskAllList.style.display="none";
-            completeList.appendChild(newInputAll);
+            myComplete=completeList.appendChild(newInputAll);
             completeList.style.display="none";
             console.log(taskAllList);
         });
@@ -97,19 +97,25 @@ window.addEventListener('load',()=>{
           
         function showComplete() {
              completeList.style.display="block";
+             taskAllList.style.display="none";
         };
         
         all.addEventListener("click",showAll);
         
         function showAll(){
-            completeList.style.display="none";
-            listAll.appendChild(taskAllList);
+            //completeList.style.display="none";
+            
+            //listAll.appendChild(completeList);
+            myComplete;
             taskAllList.style.display="block";
         }
            
         clearAll.addEventListener('click',()=>{             //全部清除
             while(listAll.firstChild){
                  listAll.removeChild(listAll.lastChild);
+            }
+            while(completeList.firstChild){
+                completeList.removeChild(completeList.lastChild);
             }
         });
            
