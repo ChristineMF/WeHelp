@@ -5,6 +5,7 @@ window.addEventListener('load',()=>{
     const clearAll=document.querySelector(".btnClearAll");
     const filterAction=document.querySelector(".filter span");
     const listComplete=document.querySelector("#completed");//列出完成項目
+    const listPending=document.querySelector("#pending");//列出執行中項目
     const completeList=document.querySelector("#completeAll");//另建一個div列出完成項目
     const All=document.querySelector("#all");
     
@@ -77,35 +78,39 @@ window.addEventListener('load',()=>{
         });
         
         taskDelete.addEventListener('click',()=>{           //刪除
-           listAll.removeChild(taskAllList); 
+           listAll.removeChild(taskAllList);
         });
-        
-        //const completeInput=document.createElement("input");
-        //completeInput.classList.add("text");
-        //completeInput.type="text";
-        
         
         //按下每個事項的完成鍵後，將newInputAll的資料放入completeList,隱藏taskAllList及completeList
         taskComplete.addEventListener('click',()=>{
             taskAllList.style.display="none";
             completeList.appendChild(newInputAll);
-            completeList.style.display="none";   
+            //completeList.appendChild(taskDelete);
+            completeList.style.display="block";   
         });
         
         //按span的完成鍵後，顯示已完成項目
         listComplete.addEventListener("click",showComplete);
-          
-    
+        
         function showComplete() {
             listAll.style.display="none";
              completeList.style.display="block"; 
         };
+        
+        //按span的執行中鍵後，顯示未完成項目
+        listPending.addEventListener("click",showPending);
+        
+        function showPending(){
+            listAll.style.display="block";
+            completeList.style.display="none";
+        }
         
         //按下全部鍵時，顯示全部
         all.addEventListener("click",showAll);
         
         function showAll(){
             listAll.style.display="block";
+            completeList.style.display="block";
             }
               
         clearAll.addEventListener('click',()=>{             //全部清除
