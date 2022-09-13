@@ -109,6 +109,16 @@ main{
     width:50px;
     margin:0px;
 }
+
+#completeAll .text{
+    display:block;
+    width:100%;
+    transition:0.4s;
+    color:black;
+    font-size:24px;
+    margin:10px 0px 10px 0px;
+    padding:10px;
+}
 .controls .btnClearAll{
     display:flex;
     outline:none;

@@ -80,36 +80,34 @@ window.addEventListener('load',()=>{
            listAll.removeChild(taskAllList); 
         });
         
-        const completeInput=document.createElement("input");
-        completeInput.classList.add("text");
-        completeInput.type="text";
+        //const completeInput=document.createElement("input");
+        //completeInput.classList.add("text");
+        //completeInput.type="text";
         
-        var myComplete=[];
+        
+        //按下每個事項的完成鍵後，將newInputAll的資料放入completeList,隱藏taskAllList及completeList
         taskComplete.addEventListener('click',()=>{
             taskAllList.style.display="none";
-            myComplete=completeList.appendChild(newInputAll);
-            completeList.style.display="none";
-            console.log(taskAllList);
+            completeList.appendChild(newInputAll);
+            completeList.style.display="none";   
         });
         
-        
+        //按span的完成鍵後，顯示已完成項目
         listComplete.addEventListener("click",showComplete);
           
+    
         function showComplete() {
-             completeList.style.display="block";
-             taskAllList.style.display="none";
+            listAll.style.display="none";
+             completeList.style.display="block"; 
         };
         
+        //按下全部鍵時，顯示全部
         all.addEventListener("click",showAll);
         
         function showAll(){
-            //completeList.style.display="none";
-            
-            //listAll.appendChild(completeList);
-            myComplete;
-            taskAllList.style.display="block";
-        }
-           
+            listAll.style.display="block";
+            }
+              
         clearAll.addEventListener('click',()=>{             //全部清除
             while(listAll.firstChild){
                  listAll.removeChild(listAll.lastChild);
