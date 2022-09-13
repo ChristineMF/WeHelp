@@ -3,7 +3,7 @@ window.addEventListener('load',()=>{
     const newInput=document.querySelector("#input_new");//取得輸入待辦事項(input_new)的內容到newInput
     const listAll=document.querySelector("#taskAll");//列出所有事項(taskAll)到listAll
     const clearAll=document.querySelector(".btnClearAll");
-    const filterAction=document.querySelector(".filter span");
+    const filterAction=document.querySelectorAll(".filter span");
     const listComplete=document.querySelector("#completed");//列出完成項目
     const listPending=document.querySelector("#pending");//列出執行中項目
     const completeList=document.querySelector("#completeAll");//另建一個div列出完成項目
@@ -38,9 +38,6 @@ window.addEventListener('load',()=>{
         newInputAll.setAttribute("readonly","readonly");    //設定newInputAll輸入框為只能讀取
         task_contentAll.appendChild(newInputAll);           //將newInputAll(全部輸入的待辦事項）放入task_contentAll(所有待辦事項)
         
-        
-        
-        
         //修改及刪除按鈕
         const taskActions = document.createElement("div");  //在div元素建立taskActions(動作)節點
         taskActions.classList.add("actions");               //為taskActions動作節點新增actions（動作）類
@@ -52,7 +49,6 @@ window.addEventListener('load',()=>{
         const taskDelete=document.createElement("button");  //在button元素建立taskDelete(刪除)節點
         taskDelete.classList.add("delete");                 //為taskDelete增加delete(刪除)類
         taskDelete.innerHTML="刪除";                         //按鈕上的文字為刪除
-        
         
         
         taskActions.appendChild(taskEdit);                  //將taskEdit(修改)放入taskActions(動作)
@@ -112,6 +108,13 @@ window.addEventListener('load',()=>{
             listAll.style.display="block";
             completeList.style.display="block";
             }
+        
+        filterAction.forEach(btn=>{
+            btn.addEventListener("click", ()=>{
+                document.querySelector("span.active").classList.remove("active");
+                btn.classList.add("active");
+            })
+        })
               
         clearAll.addEventListener('click',()=>{             //全部清除
             while(listAll.firstChild){
@@ -121,6 +124,8 @@ window.addEventListener('load',()=>{
                 completeList.removeChild(completeList.lastChild);
             }
         });
+        
+        
            
     });
        
