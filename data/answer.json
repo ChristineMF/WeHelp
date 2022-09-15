@@ -1,0 +1,27 @@
+[
+  {
+    "question":"一、兩百字內的個人簡介",
+    "answer":"2006年進台大醫院任護理師，曾用EXCEL VBA開發協助照護病人的表單，2011年至陽明大學生物醫學資訊所在職進修。2017年碩士畢業後，喜歡寫程式的感覺始終高於臨床工作，於2021年在另一半的支持下決定離職轉戰軟體工程師，曾參加2021年台大資訊系統C#訓練班及自學 HTML、CSS、JavaScript 及 ASP .NET MVC，曾在朋友介紹下承包某公司網頁改版而自學 PHP 及MySQL，並順利結案得到開發費用。在YouTube上受到彭彭老師及第二屆學員介紹 bootcamp 的吸引下，希望加入WeHelp磨練成長至完成個人專案作品。"
+  },
+  {
+    "question":"二、為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。",
+    "answer":"透過彭彭的課程影片及看書自學 Git、HTML、CSS  與JavaScript，並運用其語法製作學習筆記網頁。目前運用兩種方式製作To-do List，github page連結：<br>1. <a href="https://christinemf.github.io/WeHelp/index2.html" target="_blank">To-do List(1版_尚未完成）</a><br>2. <a href="https://christinemf.github.io/WeHelp/index4.html" target="_blank">To-do List(2版)</a><br><a href="https://github.com/ChristineMF/WeHelp.git" target="_blank">我的GitHub連結</a>"
+  },
+  {
+    "question":"三、如果參與這個計畫，會怎麼安排學習時間？",
+    "answer":"因待業中故全心投入參與WeHelp培訓，預計學習時間為每週一至六的 8:30-17:30，22:00-24:00，週日視任務完成狀況而彈性調整，因有兩個國小的子女，故其餘為陪伴子女的家庭時間。"
+  }
+  {
+    "question":"四、是否有想要加入的軟體公司？為什麼想加入該公司？",
+    "answer":"2006年進台大醫院任護理師，曾用EXCEL VBA開發協助照護病人的表單，2011年至陽明大學生物醫學資訊所在職進修。2017年碩士畢業後，喜歡寫程式的感覺始終高於臨床工作，於2021年在另一半的支持下決定離職轉戰軟體工程師，曾參加2021年台大資訊系統C#訓練班及自學 HTML、CSS、JavaScript 及 ASP .NET MVC，曾在朋友介紹下承包某公司網頁改版而自學 PHP 及MySQL，並順利結案得到開發費用。在YouTube上受到彭彭老師及第二屆學員介紹 bootcamp 的吸引下，希望加入WeHelp磨練成長至完成個人專案作品。"
+  },
+  {
+    "question":"二、為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。",
+    "answer":"透過彭彭的課程影片及看書自學 Git、HTML、CSS  與JavaScript，並運用其語法製作學習筆記網頁。目前運用兩種方式製作To-do List，github page連結：<br>1. <a href="https://christinemf.github.io/WeHelp/index2.html" target="_blank">To-do List(1版_尚未完成）</a><br>2. <a href="https://christinemf.github.io/WeHelp/index4.html" target="_blank">To-do List(2版)</a><br><a href="https://github.com/ChristineMF/WeHelp.git" target="_blank">我的GitHub連結</a>"
+  },
+  {
+    "question":"Chromecast",
+    "answer":1440
+  }
+  
+]
