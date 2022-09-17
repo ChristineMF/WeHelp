@@ -36,7 +36,7 @@ body{
     border:1px #DCDCDC solid;
     border-radius:15px; 
     text-align:left;
-    line-height: 10px;
+    line-height: 25px;
 }
 .about{
    line-height: 10px;
@@ -60,5 +60,17 @@ input{
 #city{
     font-size:14px;
 }
+#question{
+    padding:0px;
+    margin:10px;
+    font-size:24px;
+}
+#answer{
+    padding:0px;
+    margin:20px
+   
+}
+.inline{display:inline;}
+.hide{display:none;}
 
 
