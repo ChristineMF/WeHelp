@@ -4,33 +4,36 @@
                 //Response物件，代表伺服器的回應
             })
 */
+//box的id,統計元素id,允許輸入字元數
 
+    
 let src="https://christinemf.github.io/WeHelp/data/answer.json";
 fetch(src).then(function(response){
                                     return response.json();
                                   }).then(function(result)
                                           {
-                                              console.log("final data",result[0]);
+                                              //console.log("final data",result[0]);
                                               let wequestion;
                                               
                                               for(let i=0; i<result.length; i++)
                                               {
+                                                  
                                                   let questionlist=document.getElementById("question-"+i);
                                                   let answerlist=document.getElementById("answer-"+i);
-                                                  questionlist.innerHTML="";
-                                                  answerlist.innerHTML="";
-                                                    wequestion=result[i];
-                                                    console.log(wequestion);
-                                                    answerlist.innerHTML+=wequestion.answer;
-                                                    questionlist.innerHTML+=wequestion.question+"<hr/>";
-                                                    
-                                                  /*if(answerlist.innerHTML.length>15){
-                                                      anwerlist.innerHTML+=wequestion.answer.<15;
-                                                  }else{
-                                                      answerlist.innerHTML+=wequestion.answer;
-                                                  }*/
+                                                  
+                                                        var qmenuno=document.getElementById("qMenu-"+i);
+                                                          questionlist.innerHTML="";
+                                                          answerlist.innerHTML="";
+                                                            wequestion=result[i];
+                                                            //console.log(wequestion);
+                                                            answerlist.innerHTML+=wequestion.answer;
+                                                            questionlist.innerHTML+=wequestion.question+"<hr/>";
+                                                      
+                                                          
                                                 }                           
                                             })
+
+
 
 
 /*
@@ -58,6 +61,3 @@ fetch(src).then(function(response){
         qmenuno.classList.toggle("hide");
     }
     */
-        
-
-       

@@ -63,11 +63,12 @@ input{
 #question{
     padding:0px;
     margin:10px;
-    font-size:24px;
+    font-size:20px;
 }
 #answer{
     padding:0px;
     margin:20px;
+    font-size:16px;
    
 }
 .inline{display:inline;}
@@ -75,7 +76,7 @@ input{
 
 /*以下為main_wehelpV2用*/
 div [id*="question-"]{
-    font-size:22px;
+    font-size:20px;
 }
 
 .load_more{
@@ -91,6 +92,13 @@ div [id*="question-"]{
     border:0 none;
     font-size:24px;
     display:none;
+}
+
+/*以下為main_wehelpV3用*/
+#myPic{
+    height:100px;
+    width:100px;
+    border-radius:50px;
 }
 
    
